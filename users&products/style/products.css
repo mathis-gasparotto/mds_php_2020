@@ -1,0 +1,15 @@
+#products_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.product_promo {
+    background-color: red;
+    padding: 1px 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+    font-size: 0.7em;
+
+}

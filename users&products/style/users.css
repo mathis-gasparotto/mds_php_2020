@@ -1,0 +1,51 @@
+#users {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30vh;
+}
+
+.user {
+    margin: 1em;
+    padding: 0.7em;
+    box-shadow: 0px 1px 11px 4px #ccc;
+}
+
+.activated,
+.unactivated {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lblActivated { /* .activated p */
+    color: green;
+    font-size: 18px;
+}
+
+.lblUnactivated { /* .unactivated p */
+    color: red;
+    font-size: 18px;
+}
+
+.cercle_vert {
+    background: green;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 2px solid green;
+    margin-right: 0.5em;
+}
+
+.cercle_rouge {
+    background: red;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 2px solid red;
+    margin-right: 0.5em;
+}
+
+.user p {
+    margin: 0.5em 0;
+}
