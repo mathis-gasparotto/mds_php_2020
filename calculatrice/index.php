@@ -41,7 +41,10 @@
     <input type="number" name="number2" id="numer2" required>
     <button type="submit">Calculer</button>
 
-    <p>Resultat : <?php echo $result; ?></p>
+    <?php if (isset($result)) {?>
+      <p>Resultat : <?php echo $result; ?></p>
+    <?php } ?>
+    
 
   </form>
 </body>
