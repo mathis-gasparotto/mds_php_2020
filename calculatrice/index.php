@@ -1,5 +1,3 @@
-<?php require_once 'function/form_process.php'; ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -12,7 +10,7 @@
 <body>
   <h1>Calculatrice</h1>
 
-  <form>
+  <form action="function/form_process.php">
     <input type="number" name="number1" id="number1" required />
     <select name="operator" id="operator">
       <option value="" selected>--Choisissez un opérateur--</option>
