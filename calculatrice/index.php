@@ -1,21 +1,4 @@
-<?php
-  require_once 'function/function.php';
-
-  if (dataIsValid()) {
-    if ($_GET['operator'] == '+') {
-      $result = $_GET['number1'] + $_GET['number2'];
-    }
-    if ($_GET['operator'] == '-') {
-      $result = $_GET['number1'] - $_GET['number2'];
-    }
-    if ($_GET['operator'] == '/') {
-      $result = $_GET['number1'] / $_GET['number2'];
-    }
-    if ($_GET['operator'] == '*') {
-      $result = $_GET['number1'] * $_GET['number2'];
-    }
-  }
-?>
+<?php require_once 'function/form_process.php'; ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -32,7 +15,7 @@
   <form>
     <input type="number" name="number1" id="number1" required />
     <select name="operator" id="operator">
-      <option value="0" selected>--Choisissez un opérateur--</option>
+      <option value="" selected>--Choisissez un opérateur--</option>
       <option value="+">+</option>
       <option value="-">-</option>
       <option value="/">/</option>
@@ -40,12 +23,7 @@
     </select>
     <input type="number" name="number2" id="numer2" required>
     <button type="submit">Calculer</button>
-
-    <?php if (isset($result)) {?>
-      <p>Resultat : <?php echo $result; ?></p>
-    <?php } ?>
     
-
   </form>
 </body>
 
