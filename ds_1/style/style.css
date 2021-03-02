@@ -1,0 +1,22 @@
+#cars {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 80%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.car_img {
+  width: 300px;
+}
+
+.car {
+  margin: 10px;
+}
