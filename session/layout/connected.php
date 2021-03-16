@@ -1,12 +1,10 @@
 <div id="connected">
-  <?php 
-  foreach ($users as $user) {
-
-  
-    if($user['login'] == $_POST['login'] && $user['password'] == $_POST['password']) { ?>
-      <div class="cercle_vert"></div>
-    <?php } else { ?>
-      <div class="cercle_vert"></div>
-    <?php }
-  } ?>
+  <?php
+  if (isset($_SESSION['login'])) { ?>
+    <div class="cercle_vert"></div>
+    <a href="logout.php">Disconnect (<?php echo $_SESSION['login']; ?>)</a>
+  <?php } else { ?>
+    <div class="cercle_rouge"></div>
+    <a href="sign_in.php">Sign In</a>
+  <?php } ?>
 </div>

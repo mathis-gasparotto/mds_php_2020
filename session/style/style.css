@@ -15,3 +15,13 @@
   border: 2px solid red;
   margin-right: 0.5em;
 }
+
+.light_body {
+  background-color: white;
+  color: black;
+}
+
+.dark_body {
+  background-color: #181818;
+  color: white;
+}
