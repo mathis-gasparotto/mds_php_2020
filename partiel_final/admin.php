@@ -31,8 +31,8 @@ if (!isset($_SESSION['connected']) || empty($_SESSION['connected'])) {
         <h3 class="album-block-title"><?php echo $album['title'] ?> <span> - <?php echo $album['artist'] ?></span></h3>
         <img class="album-block-cover" src="<?php echo $album['cover'] ?>" alt="<?php echo $album['title'] ?>" />
         <div class="cta">
-          <a href="editAlbum.php?id=<?php echo $album['id']; ?>">Modifier</a>
-          <a id="album-delete-admin" class="btn btn-danger" href="deleteAlbum?id=<?php echo $album['id']; ?>">Supprimer</a>
+          <a class="btn" href="editAlbum.php?id=<?php echo $album['id']; ?>">Modifier</a>
+          <a class="btn btn-danger album-delete-admin" href="deleteAlbum?id=<?php echo $album['id']; ?>">Supprimer</a>
         </div>
       </div>
     <?php } ?>

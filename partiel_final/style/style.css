@@ -58,8 +58,11 @@ footer {
 .album-block-content {
   padding: 1.5em 0;
   border-bottom: solid 1px black;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 1em;
+  width: 375px;
 }
 
 .album-block-title span {
@@ -67,14 +70,18 @@ footer {
   font-weight: 400;
 }
 
-.album-block-title {
+.album-block-cover {
   width: 375px;
 }
 
 .album-block-content .cta {
-  display: flex;
-  justify-content: space-evenly;
+  /*display: flex;
+  justify-content: space-evenly;*/
   margin-top: 1em;
+}
+
+.album-block-content .cta a {
+  margin: 0 0.5em;
 }
 
 #album-content {
@@ -146,6 +153,19 @@ footer {
   margin: auto;
 }
 
-#album-delete-admin {
-  background-color: #dc3545;
+.album-delete-admin {
+  background-color: #dc3545 !important;
+}
+
+.btn:hover {
+  color: #bbbbbb !important;
+}
+
+.btn-back {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em 1em;
+  background-color: black;
+  border-radius: 3px;
+  margin: 1em 0;
 }

@@ -78,7 +78,10 @@ try {
 
 
 <div id="edit-album-form" class="album-form">
+
+  <a class="btn btn-back" href="javascript:history.go(-1)">Retour en arrière</a>
   <h3 class="title">Modifier l'album <?php echo $album['title']; ?> de <?php echo $album['artist']; ?></h3>
+
   <form method="POST" class="row g-3">
     <div class="mb-3">
       <label for="title" class="form-label">Nom de l'album</label>
@@ -92,6 +95,7 @@ try {
       <label for="cover" class="form-label">Lien vers la pochette d'album</label>
       <input type="text" class="form-control" name="cover" placeholder="ex : http://mathis-gasparotto.site/site-vraiment-trop-bien-skurrt.png .." value="<?php echo $album['cover']; ?>" required />
     </div>
+    <img class="album-block-cover" src="<?php echo $album['cover'] ?>" alt="<?php echo $album['title'] ?>" />
 
     <div class="col-12">
       <button type="submit" class="btn btn-primary" name="edit-album-submit" value="submit">Modifier</button>

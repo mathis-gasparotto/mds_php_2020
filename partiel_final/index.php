@@ -26,8 +26,8 @@ require_once "layout/header.php";
         <h3 class="album-block-title"><?php echo $album['title'] ?> <span> - <?php echo $album['artist'] ?></span></h3>
         <img class="album-block-cover" src="<?php echo $album['cover'] ?>" alt="<?php echo $album['title'] ?>" />
         <div class="cta">
-          <a href="album.php?id=<?php echo $album['id']; ?>">Voir en détails</a>
-          <a href="addToCart?id=<?php echo $album['id']; ?>">Ajouter au panier</a>
+          <a class="btn" href="album.php?id=<?php echo $album['id']; ?>">Voir en détails</a>
+          <a class="btn" href="addToCart?id=<?php echo $album['id']; ?>">Ajouter au panier</a>
         </div>
       </div>
     <?php } ?>

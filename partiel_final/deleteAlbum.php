@@ -33,7 +33,7 @@ try {
   </div>
 
   <div class="btn-group" role="group">
-    <a href="admin.php" class="btn btn-danger">Non</a>
+    <a href="javascript:history.go(-1)" class="btn btn-danger">Non</a>
     <a href="deleteAlbum.php?id=<?php echo $_GET['id']; ?>&confirm=1" class="btn btn-primary">Oui</a>
   </div>
 </div>
