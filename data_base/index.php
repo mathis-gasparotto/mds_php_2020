@@ -22,10 +22,6 @@
   <a href="index.php">Reset</a>
   </br>
 
-  <!-- <form method="POST">
-    <input type="submit" value="Reset" name="reset" />
-  </form> -->
-
   <?php
   //Pour discuter avec mons erveur de base de données,
   //je veux construire un objet PDO
@@ -50,10 +46,6 @@
   } else {
     $stmt = $pdo->query("SELECT * FROM client");
   }
-
-  /*if (isset($_POST['reset']) && $_POST['reset'] = "Reset") {
-    header("Location: index.php");
-  }*/
 
   if (!$stmt) {
     die('Erreur lors de la requête');
